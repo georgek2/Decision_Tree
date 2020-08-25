@@ -19,3 +19,13 @@
   
   + Imputing only the columns with not soo many missing values.
   + Cardinality is simply the number of unique entries in a categorical column.
+  
+  > Model using Pipelines.
+   
+   + Pipelines are better than manually imputing missing values as well as encoding the categorical variables.
+   + Just declear the preprocessing steps: Set imputation strategies and the encoding to use.
+   + Then, declare a preprocessor that bundles all the preprocessing steps.
+   + Declare a pipeline that bundles the preprocessing steps and modelling altogether.
+   + Feed the unpreprocessed training and validation sets to this pipeline.
+   + Make predictions with it and valuate its performance.
+  
